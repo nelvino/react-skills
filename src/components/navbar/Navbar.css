@@ -1,0 +1,76 @@
+/* Navbar container */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Navbar logo */
+  .navbar-logo img {
+    width: 100px;
+  }
+  
+  /* Navbar menu items */
+  .navbar-menu {
+    display: flex;
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu ul li {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  
+  /* Mobile menu */
+  .navbar-mobile-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Open state for mobile menu */
+  .navbar-menu.open {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .navbar-menu.open ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  /* Hamburger icon in open state */
+  .navbar-mobile-toggle.open {
+    transform: rotate(90deg);
+  }
+  
+  /* Media query for mobile and tablet view */
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-mobile-toggle {
+      display: block;
+    }
+  }
+  
