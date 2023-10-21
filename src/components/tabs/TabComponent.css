@@ -1,0 +1,34 @@
+/* Styling for tabs */
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tabs li {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .tabs li:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tabs li.active {
+    background-color: #007bff; /* Change this to the desired active tab color */
+    color: #fff;
+    box-shadow: none;
+  }
+  
+  /* Styling for tab content */
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
